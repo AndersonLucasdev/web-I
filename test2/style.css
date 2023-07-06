@@ -10,15 +10,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(213,19,196,1) 12%, rgba(77,125,234,1) 100%); */
-    background: rgb(33,36,0);
-    background: linear-gradient(90deg, rgba(33,36,0,1) 0%, rgba(213,35,19,1) 12%, rgba(77,109,234,1) 100%);
+    background-color: #f0f0f0;
 }
 
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
 .container {
-    height: 60%;
-    width: 70%;
+    height: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +34,7 @@ body {
 
 .container-titulo {
     height: 15%;
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,4 +42,76 @@ body {
 
 .container-titulo > h1 {
     color: #000;
+    text-align: center;
+}
+
+.container-principal {
+    height: 85%;
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-principal-sexo {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-principal-sexo-ambos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 50%;
+}
+
+.container-principal-sexo-masculino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 50%;
+}
+
+.container-principal-sexo-feminino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 50%;
+}
+
+.container-principal-nome {
+    height: 15%;
+    width: 100%;
+}
+
+.container-principal-altura {
+    height: 15%;
+    width: 100%;
+}
+
+.container-principal-peso {
+    height: 15%;
+    width: 100%;
+}
+
+.container-principal-confirmar {
+    height: 15%;
+    width: 100%;
+}
+
+.informacoes {
+    height: 60%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
