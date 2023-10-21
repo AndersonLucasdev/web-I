@@ -14,15 +14,15 @@
             </div>
                 <div class="container-principal-nome">
                     <h3>Nome</h2>
-                    <input class="entrada" type="text" placeholder="Qual seu nome?">
+                    <input class="entradanome" type="text" placeholder="Qual seu nome?">
                 </div>
                 <div class="container-principal-altura">
                     <h3>Altura</h3>
-                    <input class="entrada" type="text" placeholder="Qual a sua altura?">
+                    <input class="entradaaltura" type="text" placeholder="Qual a sua altura?">
                 </div>
                 <div class="container-principal-peso">
                     <h3>Peso</h3>
-                    <input class="entrada" type="text" placeholder="Qual o seu peso?">
+                    <input class="entradapeso" type="text" placeholder="Qual o seu peso?">
                 </div>
                 <div class="container-principal">
                     <div class="container-principal-sexo">
@@ -31,10 +31,10 @@
                         </div>
                         <div class="container-principal-sexo-ambos">
                             <div class="container-principal-sexo-masculino">
-                                <button class="BotaoMasculino">Masculino</button>
+                                <button onclick="calcularIMC('masculino')" class="BotaoMasculino">Masculino</button>
                             </div>
                             <div class="container-principal-sexo-feminino">
-                                <button class="BotaoFeminino">Feminino</button>
+                                <button onclick="calcularIMC('feminino')" class="BotaoFeminino">Feminino</button>
                             </div>
                         </div>
                     </div>
@@ -47,5 +47,5 @@
         </div>
     </main>
 </body>
-    <script></script>
+    <script src="./index.js"></script>
 </html>
