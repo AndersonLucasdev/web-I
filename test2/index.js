@@ -1,14 +1,16 @@
-function calcularIMC() {
+function calcularIMC(genero) {
     const nome = document.querySelector(".entradanome").value;
-    const altura = parseFloat(document.querySelector(".entradaaltura").value);
+    let altura = parseFloat(document.querySelector(".entradaaltura").value);
     const peso = parseFloat(document.querySelector(".entradapeso").value);
-    const genero = document.querySelector('input[name="genero"]:checked');
     const informacoes = document.querySelector(".informacoes");
 
     if (!nome || isNaN(altura) || isNaN(peso) || !genero) {
+        console.log(nome)
+        console.log(altura)
+        console.log(peso)
+        console.log(genero)
         informacoes.innerHTML = "<p>Existem campos vazios ou você não selecionou o gênero.</p>";
     } else {
-        const generoSelecionado = genero.value;
         altura = altura >= 1 ? altura : altura * 100;
         const imc = peso / (altura * altura);
 
@@ -33,8 +35,9 @@ function calcularIMC() {
             ]
         };
 
-        const faixa = faixasIMC[generoSelecionado].find((faixa) => imc <= faixa.max);
+        const faixa = faixasIMC[genero].find((faixa) => imc <= faixa.max);
 
         informacoes.innerHTML = `<p>O IMC de ${nome} é: ${imc.toFixed(2)}</p><p>${faixa.mensagem}</p>`;
     }
 }
+
